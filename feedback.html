@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Your Game Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript to handle form submission
+        function submitFeedback(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            
+            // Get form data
+            const name = document.getElementById("name").value;
+            const comments = document.getElementById("comments").value;
+            
+            // Simple validation
+            if (!name || !comments) {
+                alert("Please fill in all fields.");
+                return;
+            }
+            
+            // Simulate sending data (you can replace this with an actual request to a server)
+            alert("Thank you for your feedback, " + name + "!\nYour comments: " + comments);
+            
+            // Reset form after submission
+            document.querySelector("form").reset();
+        }
+    </script>
+</head>
+<style>
+    body {
+    background-image: url('bg1.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+</style>
+<body>
+
+<header>
+    <h1 style="color:#ffffff; margin-bottom:2%;">Feedback and Suggestions</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="feedback">
+        <h2>Leave Your Feedback</h2>
+        <p>We’d love to hear what you think about the game! Please leave your feedback below.</p>
+
+        <!-- Formspree form integration -->
+        <form action="https://formspree.io/f/xyzyjowo" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</div>
+
+
+<footer>
+    <p>&copy; Wild Horizons - 2024</p>
+</footer>
+
+</body>
+</html>

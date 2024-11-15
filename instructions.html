@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions - Your Game Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    background-image: url('bg3.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+</style>
+<body>
+
+<header>
+    <h1 style="color:#ffffff; margin-bottom:2%;">How to Play "The Ninja"</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="instructions.html" class="active">Instructions</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="how-to-play">
+    <h2>Instructions</h2>
+    <p><b>Objective</b><br>
+       Embark on an epic journey as a young ninja to unlock the power of the ancient Orb. Complete quests, defeat enemies, and progress through different maps to reach the final challenge.
+       <br><br><b>Controls</b><br>
+       WASD or Arrow Keys: Move your character.<br>
+       Interact Key (if applicable): Use this to interact with objects or talk to characters.
+       <br><br><b>Gameplay</b><br>
+       Quests: Each map includes quests that must be completed to advance to the next area. Quests may involve:
+       <br><i><b>-Finding Objects</b></i>: Look for hidden items or specific objects.<br>
+       <i><b>-Counting Challenges</b></i>: Find and count particular items or enemies.<br>
+       <i><b>-Fight Scenes</b></i>: Engage in battles along the way; be strategic to win!<br>
+       <i><b>-Cutscenes</b></i>: Throughout your journey, cutscenes will reveal key story moments and hints about your destiny.
+       <div class="image-row">
+        <img src="gameplay3.png" alt="Gameplay Image 3">
+        <img src="gameplay4.png" alt="Gameplay Image 4">
+       </div>
+       <br><br><b>Time Limit</b><br>
+       Each level has a time limit, so manage your time wisely. Tips will appear the longer you’re on a quest to help guide you forward.
+       <br><br><b>End Goal</b><br>
+       Complete all quests, uncover the secrets of the elemental powers, and defeat the final challenge to finish the game!
+       <br><br><b>Note</b><br>
+       The game is designed for keyboard controls and is not mobile-friendly. For the best experience, play on a desktop or laptop.
+    </p>
+
+    <div class="image-row">
+        <img src="gameplay1.png" alt="Gameplay Image 1">
+        <img src="gameplay2.png" alt="Gameplay Image 2">
+    </div>
+</section>
+
+<style>
+    /* Styling for the image container */
+    .image-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px; /* Optional space between images */
+    }
+
+    /* Make images responsive */
+    .image-row img {
+        width: 48%; /* Adjust this to make images smaller or bigger */
+        height: auto; /* Keeps aspect ratio */
+        object-fit: cover; /* Ensures image covers the space without stretching */
+    }
+
+    /* Optional: Make sure images don't exceed the section width */
+    #how-to-play {
+        max-width: 100%;
+    }
+</style>
+
+</div>
+
+<footer>
+    <p>&copy; Wild Horizons - 2024</p>
+</footer>
+
+</body>
+</html>
