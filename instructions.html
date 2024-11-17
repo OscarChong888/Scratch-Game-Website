@@ -39,15 +39,32 @@
        WASD or Arrow Keys: Move your character.<br>
        Interact Key (if applicable): Use this to interact with objects or talk to characters.
        <br><br><b>Gameplay</b><br>
-       Quests: Each map includes quests that must be completed to advance to the next area. Quests may involve:
-       <br><i><b>-Finding Objects</b></i>: Look for hidden items or specific objects.<br>
-       <i><b>-Counting Challenges</b></i>: Find and count particular items or enemies.<br>
-       <i><b>-Fight Scenes</b></i>: Engage in battles along the way; be strategic to win!<br>
-       <i><b>-Cutscenes</b></i>: Throughout your journey, cutscenes will reveal key story moments and hints about your destiny.
-       <div class="image-row">
-        <img src="gameplay3.png" alt="Gameplay Image 3">
-        <img src="gameplay4.png" alt="Gameplay Image 4">
-       </div>
+       <div class="quest-container">
+    <div class="quest-item">
+        <div class="quest-text">
+            <i><b>Finding Objects</b></i>: Look for hidden items or specific objects.
+        </div>
+        <img src="gameplay1.png" alt="Finding Objects" class="quest-image">
+    </div>
+    <div class="quest-item">
+        <div class="quest-text">
+            <i><b>Counting Challenges</b></i>: Find and count particular items or enemies.
+        </div>
+        <img src="gameplay2.png" alt="Counting Challenges" class="quest-image">
+    </div>
+    <div class="quest-item">
+        <div class="quest-text">
+            <i><b>Fight Scenes</b></i>: Engage in battles along the way; be strategic to win!
+        </div>
+        <img src="gameplay3.png" alt="Fight Scenes" class="quest-image">
+    </div>
+    <div class="quest-item">
+        <div class="quest-text">
+            <i><b>Cutscenes</b></i>: Reveal key story moments and hints about your destiny.
+        </div>
+        <img src="gameplay4.png" alt="Cutscenes" class="quest-image">
+    </div>
+</div>
        <br><br><b>Time Limit</b><br>
        Each level has a time limit, so manage your time wisely. Tips will appear the longer you’re on a quest to help guide you forward.
        <br><br><b>End Goal</b><br>
@@ -55,33 +72,7 @@
        <br><br><b>Note</b><br>
        The game is designed for keyboard controls and is not mobile-friendly. For the best experience, play on a desktop or laptop.
     </p>
-
-    <div class="image-row">
-        <img src="gameplay1.png" alt="Gameplay Image 1">
-        <img src="gameplay2.png" alt="Gameplay Image 2">
-    </div>
 </section>
-
-<style>
-    /* Styling for the image container */
-    .image-row {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px; /* Optional space between images */
-    }
-
-    /* Make images responsive */
-    .image-row img {
-        width: 48%; /* Adjust this to make images smaller or bigger */
-        height: auto; /* Keeps aspect ratio */
-        object-fit: cover; /* Ensures image covers the space without stretching */
-    }
-
-    /* Optional: Make sure images don't exceed the section width */
-    #how-to-play {
-        max-width: 100%;
-    }
-</style>
 
 </div>
 
