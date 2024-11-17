@@ -156,3 +156,29 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
+.quest-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Space between items */
+    padding: 20px;
+}
+
+.quest-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quest-text {
+    font-size: 18px;
+    margin-bottom: 15px; /* Space between text and image */
+    line-height: 1.6;
+}
+
+.quest-image {
+    width: 250px; /* Larger image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid black; /* Black outline */
+    border-radius: 8px; /* Optional rounded corners */
+}
